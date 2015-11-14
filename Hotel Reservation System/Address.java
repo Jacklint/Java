@@ -22,8 +22,10 @@ class Address {
 			state = addressArray[3];
 			zipCode = Integer.parseInt(addressArray[4]);
 		} catch(NumberFormatException e){
+			System.out.println("NumberFormatException!");
 			return new Address(0, null, null, null, 0);
 		} catch(ArrayIndexOutOfBoundsException e){
+			System.out.println("ArrayIndexOutOfBoundsException!");
 			return new Address(0, null, null, null, 0);
 		}
 
